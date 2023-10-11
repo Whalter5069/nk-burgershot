@@ -1,6 +1,6 @@
 Citizen.CreateThread(function()
 	for k, v in pairs(Chairs) do
-		exports['qb-target']:AddBoxZone("uWuChairs"..k, v.location, v.width, v.height, { name="uWuChairs"..k, heading = v.heading, debugPoly = true, minZ = v.minZ, maxZ = v.maxZ, }, 
+		exports['qb-target']:AddBoxZone("uWuChairs"..k, v.location, v.width, v.height, { name="uWuChairs"..k, heading = v.heading, debugPoly = false, minZ = v.minZ, maxZ = v.maxZ, }, 
 			{ options = { { event = "nk-burgershot:Chair", icon = "fas fa-chair", label = "Sit Down", loc = v.location, head = v.heading }, },
 			  distance = v.distance
 		})
